@@ -1,6 +1,6 @@
 function ErrorPage(): JSX.Element {
     return (
-        <div>
+        <div className="main">
             <p>Error!</p>
         </div>
     )
