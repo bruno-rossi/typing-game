@@ -35,7 +35,7 @@ body {
 }
 
 .App {
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -87,7 +87,7 @@ body {
 
 .main {
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     background-color: aliceblue;
 }
 
@@ -101,13 +101,34 @@ body {
     /* border: 1px solid black; */
 }
 
+.button {
+    display: inline-block;
+    width: 50%;
+    height: 4em;
+    margin: 1em auto 2em auto;
+}
+
 .primary {
     color: var(--text-color2);
     background-color: var(--color2);
     font-weight: bold;
-    border: none;
+    /* border: 2px solid black; */
 }
 
 .secondary {
     color: var(--text-color1);
+    background-color: var(--color3);
+}
+
+#main-menu {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 5em auto;
+    /* height: 100%; */
+    border: 2px solid black;
+}
+
+#main-menu h1 {
+    text-align: center;
 }
