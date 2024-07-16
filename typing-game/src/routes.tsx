@@ -1,6 +1,6 @@
 import App from "./App";
 import ErrorPage from "./pages/ErrorPage";
-import Home from "./pages/Home";
+import MainMenu from "./pages/MainMenu";
 
 const routes = [
     {
@@ -10,7 +10,23 @@ const routes = [
         children: [
             {
                 path: '/',
-                element: <Home />
+                element: <MainMenu />
+            },
+            {
+                path: '/new-game/',
+                element: <MainMenu />
+            },
+            {
+                path: '/stats/',
+                element: <MainMenu />
+            },
+            {
+                path: '/levels/',
+                element: <MainMenu />
+            },
+            {
+                path: '/players/',
+                element: <MainMenu />
             }
         ]
     }
