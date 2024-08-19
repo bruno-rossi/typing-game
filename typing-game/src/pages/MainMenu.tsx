@@ -5,13 +5,14 @@ import NewPlayerModal from "../components/NewPlayerModal";
 function MainMenu(): JSX.Element {
 
     const navigate = useNavigate();
-    const modal = document.getElementById("modal") as HTMLDivElement;
-    modal.style.display = "none";
+    // const modal = document.getElementById("modal") as HTMLDivElement;
+    // modal.style.display = "none";
 
     function handleNewGameClick(event: React.MouseEvent<HTMLButtonElement>) {
         // Write new game logic here
-        modal.style.display = "inline-block";
+        // modal.style.display = "inline-block";
         // navigate(`/${event.currentTarget.id}/`);
+        return
     }
 
     function handleSecondaryButtonClick(event: React.MouseEvent<HTMLButtonElement>) {
